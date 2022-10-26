@@ -8,15 +8,8 @@ Projeto de testes para estudo da internacionalização de conteúdo
 
 ```json
 {
-    // Exemplo: pt-BR
-    
-    // Código que representa o nome da língua de acordo com a ISO 639-2 
     "language-code": "pt",
-
-    // Código "alpha-2" que representa o país de acordo com a ISO 3166
     "country-code": "BR",
-
-    // Conteúdo textual e suas respectivas chaves que serão utilizadas na internacionalização do conteúdo
     "strings": {
         "heading-1": "Projeto de estudo sobre i18n",
         "heading-2": "O que é i18n?",
@@ -24,6 +17,10 @@ Projeto de testes para estudo da internacionalização de conteúdo
     }
 }
 ```
+
+- "language-code": Código que representa o nome da língua de acordo com a ISO 639-2
+- "country-code": Código "alpha-2" que representa o país de acordo com a ISO 3166
+- "strings": Conteúdo textual e suas respectivas chaves que serão utilizadas na internacionalização do conteúdo
 
 ## Referências
 
