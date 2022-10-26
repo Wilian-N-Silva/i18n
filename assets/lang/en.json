@@ -1,6 +1,6 @@
 {
-    "language-code": "es",
-    "country-code": "ES",
+    "language-code": "en",
+    "country-code": "US",
     "strings": {
         "heading-1": "Study project on i18n",
         "heading-2": "What is i18n?",
