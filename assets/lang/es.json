@@ -4,6 +4,7 @@
     "strings": {
         "heading-1": "Proyecto de estudio sobre i18n",
         "heading-2": "¿Qué es i18n?",
-        "description": "i18n es el proceso de diseño y desarrollo donde los productos y/o servicios se adaptan a idiomas y culturas locales específicos."
+        "description": "i18n es el proceso de diseño y desarrollo donde los productos y/o servicios se adaptan a idiomas y culturas locales específicos.",
+        "project-repository": "Repositorio Github"
     }
 }
