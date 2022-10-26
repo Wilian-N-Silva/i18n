@@ -13,7 +13,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-top: 64px;
   gap: 4rem;
   height: 100%;
   max-width: 272px;
