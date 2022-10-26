@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         option.value = key
         option.innerText = value
         languageSwitch.append(option)
-    });
+    })
 })
 
 languageSwitch.addEventListener("change", (event) => {

@@ -2,29 +2,38 @@
 <html lang="pt-BR">
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>i18n</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/main.css">
 </head>
 
 <body>
 
-    <h1 data-i18n-key="heading-1">Projeto de estudo sobre i18n</h1>
+    <div class="container">
+        <h1 data-i18n-key="heading-1">Projeto de estudo sobre i18n</h1>
 
-    <h2 data-i18n-key="heading-2">O que é i18n?</h2>
+        <div class="texts">
+            <h2 data-i18n-key="heading-2">O que é i18n?</h2>
+            <p data-i18n-key="description">i18n é o processo de design e desenvolvimento onde os produtos e/ou serviços
+                são adaptados para idiomas e culturas locais específicas.</p>
+        </div>
 
-    <p data-i18n-key="description">i18n é o processo de design e desenvolvimento onde os produtos e/ou serviços são
-        adaptados para idiomas e culturas locais específicas.</p>
+        <select name="language-switch" id="language-switch"></select>
 
-    <select name="language-switch" id="language-switch"></select>
+        <a href="https://github.com/Wilian-N-Silva/i18n/" data-i18n-key="project-repository">Repositório do Github</a>
+    </div>
 
-    <br>
-    <br>
-
-    <a href="https://github.com/Wilian-N-Silva/i18n/" data-i18n-key="project-repository">Repositório do Github</a>
-
-    <script src="assets/script/main.js"></script>
+    <script src="./assets/script/main.js"></script>
 </body>
 
 </html>
