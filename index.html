@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i18n</title>
+</head>
+
+<body>
+
+    <h1 data-i18n-key="heading-1">Projeto de estudo sobre i18n</h1>
+
+    <h2 data-i18n-key="heading-2">O que é i18n?</h2>
+
+    <p data-i18n-key="description">i18n é o processo de design e desenvolvimento onde os produtos e/ou serviços são
+        adaptados para idiomas e culturas locais específicas.</p>
+
+    <select name="language-switch" id="language-switch"></select>
+
+    <script>
+        const defaultLocale = "pt";
+        const supportedLocales = ["pt", "es", "en", "fr", "ja"];
+
+        const languageSwitch = document.querySelector("#language-switch")
+
+        let translation;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            languageSwitch.replaceChildren("")
+            supportedLocales.forEach((locale) => {
+                const option = document.createElement("option")
+                option.value = locale;
+                option.innerText = locale.toUpperCase()
+                languageSwitch.append(option)
+            })
+        })
+
+        languageSwitch.addEventListener("change", (event) => {
+            changeLocale(event.target.value)
+        })
+
+        async function fetchTranslationOf(locale) {
+            const langPath = `/assets/lang/${locale}.json`
+            const response = await fetch(langPath);
+
+            return await response.json();
+        }
+
+        async function changeLocale(newLocale) {
+            translation = await fetchTranslationOf(newLocale)
+            translatePage();
+        }
+
+        function translatePage() {
+            const i18nKeys = document.querySelectorAll("[data-i18n-key]");
+
+            document.querySelector("html").setAttribute("lang", `${translation['language-code']}-${translation['country-code']}`)
+
+            i18nKeys.forEach((element) => {
+                const key = element.getAttribute('data-i18n-key');
+                element.innerHTML = translation['strings'][key]
+            })
+        }
+    </script>
+</body>
+
+</html>

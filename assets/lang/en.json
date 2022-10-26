@@ -1,0 +1,9 @@
+{
+    "language-code": "es",
+    "country-code": "ES",
+    "strings": {
+        "heading-1": "Study project on i18n",
+        "heading-2": "What is i18n?",
+        "description": "i18n is the design and development process where products and/or services are adapted to specific local languages and cultures."
+    }
+}

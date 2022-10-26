@@ -1,0 +1,9 @@
+{
+    "language-code": "pt",
+    "country-code": "BR",
+    "strings": {
+        "heading-1": "Projeto de estudo sobre i18n",
+        "heading-2": "O que é i18n?",
+        "description": "i18n é o processo de design e desenvolvimento onde os produtos e/ou serviços são adaptados para idiomas e culturas locais específicas."
+    }
+}
