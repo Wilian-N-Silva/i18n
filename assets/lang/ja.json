@@ -2,7 +2,7 @@
     "language-code": "ja",
     "country-code": "JP",
     "strings": {
-        "heading-1": "i18nに関する研究プロジェクト",
+        "heading-1": "I18nに関する研究プロジェクト",
         "heading-2": "i18nとは何ですか?",
         "description": "i18n は、製品やサービスを特定の地域の言語や文化に適合させる設計および開発プロセスです。",
         "project-repository": "Github リポジトリ"

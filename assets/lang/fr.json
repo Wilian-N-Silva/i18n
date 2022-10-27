@@ -2,7 +2,7 @@
     "language-code": "fr",
     "country-code": "FR",
     "strings": {
-        "heading-1": "Projet d'Etude I18n",
+        "heading-1": "Projet d'étude sur I18n",
         "heading-2": "Qu'est-ce que i18n ?",
         "description": "i18n est le processus de conception et de développement où les produits et/ou services sont adaptés aux langues et cultures locales spécifiques.",
         "project-repository": "Référentiel Github"
